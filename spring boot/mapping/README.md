@@ -7,6 +7,11 @@ public interface ObjectMapper {
     @Mapping(source="fieldFromDto", target="filedFromEntity")
     @Mapping(source="fieldFromDto2", target="filedFromEntity2")
     Entity toEntity(Dto dto);
+
+    @Mapping(source="fieldFromEntity", target="filedFromDto")
+    @Mapping(source="fieldFromEntity2", target="filedFromDto2")
+    Dto toDto(Entity entity);
+
 }
 ```
 

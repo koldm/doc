@@ -5,6 +5,7 @@
 public interface ObjectMapper {
 
     @Mapping(source="fieldFromDto", target="filedFromEntity")
+    @Mapping(source="fieldFromDto2", target="filedFromEntity2")
     Entity toEntity(Dto dto);
 }
 ```
